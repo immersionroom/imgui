@@ -844,3 +844,13 @@ static void ImGui_ImplGlfw_InitPlatformInterface()
 static void ImGui_ImplGlfw_ShutdownPlatformInterface()
 {
 }
+
+
+//----------------------
+// Immersion Room hacks
+//----------------------
+void ImGui_ImplGlfw_SetCurrentWindow(GLFWwindow* window) {
+    g_Window = window;
+}
+
+
